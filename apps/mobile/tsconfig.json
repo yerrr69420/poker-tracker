@@ -1,0 +1,11 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@poker-tracker/shared": ["../../packages/shared/src"],
+      "@poker-tracker/shared/*": ["../../packages/shared/src/*"]
+    }
+  },
+  "include": ["src/**/*", "*.config.js"]
+}

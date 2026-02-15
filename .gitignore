@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Env (never commit secrets)
+.env
+.env.local
+.env.*.local
+
+# Next.js
+.next/
+out/
+
+# Build
+dist/
+build/
+*.tsbuildinfo
+
+# Debug / logs
+npm-debug.log*
+pnpm-debug.log*
+*.log
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Vercel
+.vercel
+
+# Turbo
+.turbo
+
+# TypeScript
+next-env.d.ts
