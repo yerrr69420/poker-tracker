@@ -1,10 +1,10 @@
 'use client';
 
-import { type ReactNode } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 interface Props {
-  children: ReactNode;
+  children: React.ReactNode;
   glowColor?: 'cyan' | 'green' | 'red';
   pulse?: boolean;
   className?: string;
@@ -44,7 +44,7 @@ export default function NeonCard({
       }
       transition={pulse ? { duration: 1.5, repeat: Infinity, ease: 'easeInOut' } : {}}
     >
-      {children}
+      <>{children as React.ReactNode}</>
     </motion.div>
   );
 }
